@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/Train-Image.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.jumbotron {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.card {
+    border: gray solid 1px;
+    margin: 30px auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+}
+
+.table {
+    border: gray solid 1px;
+    padding: 10px;
+    color: white;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
