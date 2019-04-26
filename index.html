@@ -7,19 +7,22 @@
     <title>Train Schedule</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kanit" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid animated slideInLeft">
         <div class="container">
           <h3 class="display-4">Train Schedule</h3>
           <p class="lead">All times in PST</p>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card animated flipInX">
             <div class="card-header">
                 Current Train Schedule
             </div>
@@ -35,7 +38,7 @@
                             <th scope="col"></th>
                         </tr>
                     </thead>
-                    <tbody class="animated flipInX" id="info">
+                    <tbody id="info">
 
                     </tbody>
                 </table>
@@ -43,7 +46,7 @@
           </div>
       
       
-        <div class="card">
+        <div class="card animated flipInX">
             <div class="card-header">
                 Add Train
             </div>
@@ -62,14 +65,15 @@
                 </div>
                 <div class="form-group">
                     <label for="frequency">Frequency (min)</label>
-                    <input type="text" class="form-control" id="frequency" placeholder="5 minutes">
+                    <input type="text" class="form-control" id="frequency" placeholder="5">
                 </div>
-                <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+                <button type="submit" class="btn btn-outline-light" id="add-train">Submit</button>
             </form>
         </div>
       
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="assets/javascript/train.js"></script>
+<script type="text/javascript" src="assets/javascript/mdb.min.js"></script>
 
       
 </body>
